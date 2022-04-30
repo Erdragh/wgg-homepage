@@ -15,7 +15,8 @@
     - [3.1 YouTube videos](#31-youtube-videos)
     - [3.2 Input forms (WIP)](#32-input-forms-wip)
     - [3.3 Dropdown/collapsible content](#33-dropdowncollapsible-content)
-    - [3.4 More to come!](#34-more-to-come)
+    - [3.4 Galleries](#34-galleries)
+    - [3.5 More to come!](#35-more-to-come)
 
 
 ## 1. What do I need?
@@ -358,6 +359,31 @@ You can also easily add content that is hidden by default, inside a collapsible 
 
 Whatever you provide as the `heading` property will be the heading for the dropdown, whereas what you put into the component will be the hidden part. As this is basically a collapsed part of the article you will have to put text in paragraphs `<p>...</p>`, but you are also able to [insert images](#235-images) or [YouTube videos](#31-youtube-videos) and basically everything you could put into the article normally.
 
-### 3.4 More to come!
+### 3.4 Galleries
+
+If you want to insert a lot of pictures, because you want to create something like an art gallery, be not afraid for there exists a feature basically doing everything for you. You basically [insert all the images the same as before](#235-images), but put a component around them, which will automatically assemble them into a gallery (That can even open the pictures seperately in a big version):
+
+```html
+<gallery title="Test-Gallerie">
+    <figure>
+        <v-image name="masks_article"></v-image>
+        <figcaption>Hello There, this is a test description for the first picture in this gallery</figcaption>
+    </figure>
+    <figure>
+        <v-image name="testimg2_article"></v-image>
+    </figure>
+    <figure>
+        <v-image name="testimg2_article"></v-image>
+    </figure>
+    <figure>
+        <v-image name="testimg2_article"></v-image>
+        <figcaption>Oh, hi there, this is another image with a caption, and this one has a link in it: <inertia-link href="/">Link zur Homepage</inertia-link></figcaption>
+    </figure>
+</gallery>
+```
+
+Whatever you put into the `title` property will be the heading that will be displayed in the article above the pictures and in the big picture mode of the gallery. Also you're able to put links into the `figcaption` components, but they will only be clickable once you open the big picture mode.
+
+### 3.5 More to come!
 
 We have more advanced features planned, but not yet released as they are very very WIP. Stay tuned!
