@@ -80,6 +80,7 @@
     import Image from '@components/Image'
     import VueForm from '@components/VueForm'
     import Dropdown from '@components/Dropdown'
+    import Gallery from '@components/Gallery'
 
     export default defineComponent({
         components: {
@@ -90,7 +91,8 @@
             VueFooter,
             ReadMore,
             VueForm,
-            Dropdown
+            Dropdown,
+            Gallery
         },
 
 
@@ -145,6 +147,7 @@
                     .component("inertia-link", Link)
                     .component("vue-form", VueForm)
                     .component("dropdown", Dropdown)
+                    .component("gallery", Gallery)
                     .mount(articlecontent.value)
             })
 
