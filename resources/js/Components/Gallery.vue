@@ -71,6 +71,13 @@ export default {
 			}
 			lastIsotopeWidth = gallery.clientWidth;
 		});
+		//TODO: Doesn't work apparently. Currently only tested in desktop browser.
+		//rearrange isotope when the device has its orientation changed
+		//should prevent buggy behaviour when the device is rotated
+		// window.addEventListener("orientationchange", function() {
+		// 	isotope.arrange();
+		// 	console.log(screen.orientation);
+		// }, false);
 
 		//Give the different figures onclick events to open the overlay
 		for (var i = 0; i < gallery.children.length; i++) {
@@ -172,6 +179,9 @@ $spacing: 15px;
 				a {
 					pointer-events: none !important;
 				}
+			}
+			@media only screen and (max-width: 700px) {
+				
 			}
 		}
 	}
@@ -320,6 +330,61 @@ $spacing: 15px;
 		&.open {
 			opacity: 1;
 			pointer-events: all;
+		}
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.gallery-container {
+		.gallery {
+			figure {
+				width: calc(50% - 6px);
+			}
+		}
+	}
+}
+
+@media only screen and (max-height: 700px) {
+	.gallery-container {
+		.gallery-overlay {
+			.overlay-content {
+				height: 100%;
+				.overlay-title {
+					font-size: 20px;
+				}
+				.overlay-figures {
+					figure {
+						img {
+							top: 0;
+							transform: none;
+							box-shadow: 0 0 15px rgba(0,0,0,.15);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.gallery-container {
+		.gallery {
+			figure {
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.gallery-container {
+		padding-inline: 10px;
+		.gallery {
+			figure {
+				img {
+					border-radius: 5px !important;
+				}
+			}
 		}
 	}
 }

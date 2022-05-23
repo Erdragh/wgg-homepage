@@ -520,7 +520,7 @@
             figure {
                 margin-left: 0; margin-right: 0;
                 img {
-                    border-radius: 0 !important;
+                    border-radius: 0 ;
                 }
                 span {
                     font-size: 14px;
