@@ -2,7 +2,6 @@
     <Head title="Home"/>
 
     <slideshow :slides="slides"></slideshow>
-    <vue-headline class="mt-6">Hallo!</vue-headline>
 	<div class="outer">
 		<div class="preview">
 			<div class="force-thumbnail-aspect-ratio">
@@ -33,23 +32,14 @@
 			</div>
 		</div>
 		<div class="preview">
-			<div class="text">
-				<div class="centered">
-					<h2>Anmeldung bei uns</h2>
-					<div class="desc">Der Anmeldungsvorgang kann komplett online abgeschlossen werden.</div>
-					<a href="Schulanmeldung">
-						<span>Mehr Lesen</span><div class="arrow">0</div>
-					</a>
-				</div>
-			</div>
 			<div class="force-thumbnail-aspect-ratio">
-				<img :src="'/img/color3-article.jpeg'" class="thumbnail">
+				<img :src="'/img/color10-article.jpeg'" class="thumbnail">
 			</div>
 			<div class="text">
 				<div class="centered">
-					<h2>Anmeldung bei uns</h2>
-					<div class="desc">Der Anmeldungsvorgang kann komplett online abgeschlossen werden.</div>
-					<a href="Schulanmeldung">
+					<h2>Aktuelle Events und Termine</h2>
+					<div class="desc">Von Wettbewerben über Genossenschaften bis hin zum Tag der offenen Tür</div>
+					<a href="/tag/Events">
 						<span>Mehr Lesen</span><div class="arrow">0</div>
 					</a>
 				</div>
@@ -84,7 +74,8 @@ export default {
 div.outer {
 	max-width: var(--sz-content-width);
 	margin: 0 auto;
-	margin-top: 15px;
+	padding-top: 30px;
+	background: var(--clr-bg-primary);
 	div.preview {
 		display: flex;
 		&:last-child .force-thumbnail-aspect-ratio {
