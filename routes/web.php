@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\WebControllers\ArticleController;
 use App\Http\Controllers\WebControllers\CollectionController;
 use App\Http\Controllers\WebControllers\HomeController;
+use App\Http\Controllers\WebControllers\LandingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,8 @@ use App\Http\Controllers\WebControllers\HomeController;
 // })->name('home');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/landing', [LandingController::class, 'index'])->name('landing');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
