@@ -17,7 +17,8 @@
     - [3.1 YouTube videos](#31-youtube-videos)
     - [3.2 Input forms (WIP)](#32-input-forms-wip)
     - [3.3 Dropdown/collapsible content](#33-dropdowncollapsible-content)
-    - [3.4 More to come!](#34-more-to-come)
+    - [3.4 Formulae](#34-formulae)
+    - [3.5 More to come!](#35-more-to-come)
 
 ---
 
@@ -407,6 +408,22 @@ You can also easily add content that is hidden by default, inside a collapsible 
 
 Whatever you provide as the `heading` property will be the heading for the dropdown, whereas what you put into the component will be the hidden part. As this is basically a collapsed part of the article you will have to put text in paragraphs `<p>...</p>`, but you are also able to [insert images](#235-images) or [YouTube videos](#31-youtube-videos) and basically everything you could put into the article normally.
 
-### 3.4 More to come!
+### 3.4 Formulae
+
+In case you want to add a mathematical formula to an article, fear not, for there is an easy way that does not involve making a screenshot of a formula. There is a custom component for adding mathematical formulae with the TeX syntax to your article. Here's a full-blown example of one:
+
+```html
+<formula class="float left" subtext="This formula floats on the left">
+\lim_{\Delta \to 0} \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+</formula>
+```
+
+Let's go through what it does. You have the classes, `float` and `left`. By default, formulae are added to the center of a page and to both sides no content should be displayed. You can also put your formulae on the left or right, by adding the corresponsive class. In case you also want the text of your article to wrap around it you can also add the class `float`.
+
+In case the text around it doesn't make it clear what a formula does, you can add a subtext to the formula, by giving the element a custom property `subtext` and setting that equal to what you want displayed as a subtext.
+
+If you don't know the TeX syntax, no problem, there are plenty of tools available online for creating it simply, for example: [codecogs](https://latex.codecogs.com/).
+
+### 3.5 More to come!
 
 We have more advanced features planned, but not yet released as they are very very WIP. Stay tuned!
