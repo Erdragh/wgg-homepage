@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous"> -->
 	<span class="formula" ref="formula">
 		<slot/>
 	</span>
@@ -24,6 +24,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "/node_modules/katex/dist/katex.min.css";
+
 div.container {
 	padding: 10px;
 	width: max-content;
