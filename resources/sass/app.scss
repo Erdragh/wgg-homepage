@@ -3,7 +3,6 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Nunito Sans', sans-serif;
     -webkit-text-size-adjust: none;
 }
 
@@ -22,6 +21,7 @@
 #app {
     overflow: hidden;
     background: var(--clr-bg-secondary);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .dark {
