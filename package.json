@@ -39,6 +39,7 @@
         "imagesloaded": "^4.1.4",
         "instantsearch.css": "^7.4.5",
         "isotope-layout": "^3.0.6",
+        "katex": "^0.16.0",
         "moment": "^2.29.1",
         "timeago.js": "^4.0.2",
         "vue-instantsearch": "^4.3.3"
