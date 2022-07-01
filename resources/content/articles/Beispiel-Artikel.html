@@ -152,7 +152,42 @@ published_on: '02.11.2020 00:12'
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum facere quo cumque eius aperiam officia unde temporibus! Nostrum corporis eius ab quaerat soluta quibusdam, nam excepturi pariatur culpa dicta magnam dolores non quia error a in fugiat aut dolorem beatae laudantium expedita doloremque reprehenderit voluptatem! Sint, tempore! Error autem sint corrupti ratione? Libero esse nemo dolor sed corrupti? Obcaecati eius reiciendis voluptate accusamus tempore! Dolorum laudantium error delectus dolores, vitae minus, eaque corrupti, numquam magni officia alias voluptates voluptatem at! Fugiat fugit, dolore debitis hic quo suscipit vel labore non modi quos ipsam omnis nam nisi consectetur cum! Minus, incidunt!</p>
     <v-image name="color3"></v-image>
 </dropdown>
-
+<p>
+    You can also easily add mathematical formulae to an article. We use KaTeX, for which you can use the normal TeX syntax. Since this syntax is very extensive, it won't be explained here and the best idea would be to use some kind of TeX generator, like: <a href="https://latex.codecogs.com/">codedogs</a>.
+</p>
+<p>
+    By default, a formula appears in the center of the page, like this:
+</p>
 <formula>
+\left ( \frac{a}{b} \right )\cdot 2^{3}
+</formula>
+<p>
+    However, they can also be on the right or left side of the page, like this:
+</p>
+<formula class="right">
 \lim_{\Delta \to 0} \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+</formula>
+<formula class="left">
+\lim_{\Delta \to 0} \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+</formula>
+<p>
+    You can also add the <code>float</code> class to a formula, when it's situated on either side and not in the center, so the text after it wraps around it, just like an image:
+</p>
+<formula class="float left" subtext="This formula floats on the left">
+\lim_{\Delta \to 0} \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+</formula>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti aliquid perspiciatis quasi atque soluta omnis harum optio possimus odio dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aut voluptatum labore dignissimos, magni eligendi id eaque sapiente illo itaque odit a magnam veniam quasi corporis laboriosam nesciunt amet ad beatae voluptatibus. Molestias impedit beatae sequi deserunt vel tempore reprehenderit delectus expedita dignissimos, maiores non debitis dolores id ipsa dolore.
+</p>
+<formula class="float right" subtext="This formula also floats, but this time on the right">
+\lim_{\Delta \to 0} \frac{f(x_0+\Delta x)-f(x_0)}{\Delta x}
+</formula>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati nemo officia voluptate mollitia ratione omnis reiciendis hic! Doloribus consequuntur sunt, voluptates eius amet voluptate dolorum minus ipsam aliquam repellat nemo nihil libero. Atque in sequi omnis quibusdam magni quaerat ullam accusamus non odit possimus animi, ipsum voluptates provident maiores cumque voluptatum quis nostrum. Temporibus ab molestiae cumque impedit esse, molestias nihil! Facere debitis obcaecati nobis adipisci quod molestiae quia exercitationem repudiandae odit quasi fuga, illo quo praesentium quaerat dolores, harum modi omnis earum dolorum eligendi repellendus similique reiciendis quos corrupti! Quod et veniam inventore accusamus qui voluptatem unde sit.
+</p>
+<p>
+    Formulae can also have small subtexts, for you the author to explain what they are, when it isn't clear from the text:
+</p>
+<formula subtext="This is a subtext">
+\displaystyle \lim_{Spass \to 0}=\left| Deutsch\right|
 </formula>
